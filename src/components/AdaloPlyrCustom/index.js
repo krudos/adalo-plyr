@@ -1,16 +1,26 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
+import Plyr from 'plyr-react'
 
-class AdaloPlyrCustom extends Component {
-	render() {
-		const { color, text } = this.props
+/*
+	source={
+	   
+	  }
+	  options={
+	   
+	  }
+	   */
+const AdaloPlyrCustom = (props) => {
+	const { color, text } = props
 
-		return (
-			<View style={styles.wrapper}>
-				<Text style={{ color }}>{text}</Text>
-			</View>
-		)
-	}
+	return (
+		<View style={styles.wrapper}>
+			<Text style={{ color }}>{text} xx</Text>
+			<Plyr
+
+			/>
+		</View>
+	)
 }
 
 const styles = StyleSheet.create({
